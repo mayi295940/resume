@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+		<meta charset="utf-8" />
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="dist/css/bootstrap.css" />
+		<script src="js/jquery-2.0.0.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<style>
+			body {
+				padding-top: 70px;
+			}
+			.list-group{
+				margin-bottom: 0 !important;
+			}
+		</style>
+		<title>Resume</title>
+	</head>
+	<body class="container">
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<div class="navbar-brand">YJ M</div>
+						<button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#divNav">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					
+					<!--<div id="divNav" class="collapse navbar-collapse" >
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<button type="button" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#divModal" 
+									tile="Print">Print</button>
+									<div class="modal fade" id="divModal">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+													<h4 class="modal-title">Print Resume</h4>
+												</div>
+												<div class="modal-body">
+													Print Preview Or Print Config
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-mismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary" >Print</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								
+								<button type="button" class="btn btn-info navbar-btn" data-toggle="tooltip" data-placement="bottom" title="Download">Download</button>
+								<script type="text/javascript">$(function() {
+										$('[data-toggle="tooltip"]').tooltip();
+									})
+								</script>
+							</li>
+						</ul>
+					</div>-->
+				</div>
+			</nav>
+		</header>
+		
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">Personal Info</div>
+					<div class="panel-body">
+						<img src="img/personal.jpg" class="img-responsive img-rounded" alt="me" data-placement="left"/>
+						<p class="text-center text-info"><kbd>马彦吉</kbd></p>
+						<address>
+							<span class="glyphicon glyphicon-home" title="毕业院校"> <code>四川师范大学</code></span><br />
+							<span class="glyphicon glyphicon-book" title="专业"> <code>工业工程(本科)</code></span><br />
+							<span class="glyphicon glyphicon-globe" title="籍贯"> <code>四川巴中</code></span><br />
+							<span class="glyphicon glyphicon-phone" title="电话"> <code>18280087275</code></span><br />
+							<span class="glyphicon glyphicon-envelope" title="邮箱"> <code>295940323@qq.com</code></span><br />
+						</address>
+					</div>
+				</div>
+				<div class="panel panel-info">
+					<div class="panel-heading">Job Objective</div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item list-group-item-success">
+								<div class="row">
+									<div class="col-sm-6">期望职位</div>
+									<div class="col-sm-6">JAVA工程师</div>
+									
+								</div>
+							</li>
+							<li class="list-group-item list-group-item-success">
+								<div class="row">
+									<div class="col-sm-6">期望薪资</div>
+									<div class="col-sm-6">面议</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<div class="panel panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">Work Experense</a></div>
+						<div id="collapseOne" class="panel-collapse ">
+							<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item list-group-item-success">
+										<div class="row">
+											<div class="col-sm-4">2016/9 - 至今</div>
+											<div class="col-sm-4">中科软科技股份有限公司</div>
+											<div class="col-sm-4">Java开发</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Education</div>
+						<div id="collapseTwo" class="panel-collapse ">
+							<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item list-group-item-success">
+										<div class="row">
+											<div class="col-sm-4">2011/9 - 2015/6</div>
+											<div class="col-sm-4">四川师范大学</div>
+											<div class="col-sm-4">本科</div>
+											
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Personal Skill</div>
+						<div id="collapseTwo1" class="panel-collapse ">
+							<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item list-group-item-success">
+										熟悉Linux 常用命令以及基于Linux开发环境的搭建
+									</li>
+									
+									<li class="list-group-item list-group-item-success">
+										熟练掌握SpringMVC、JPA&SpringData、Shiro、MyBatis 等开源框架、深刻理解 SpringMVC 核心流程
+									</li>
+									
+									<li class="list-group-item list-group-item-success">
+										熟练掌握JaveScript，Ajax，jQuery、easyui 、bootstrap、layui、fullcalendar和echarts等前台开发技术，深刻理解 JavaScript 面向对象编程思想
+									</li>
+									
+									<li class="list-group-item list-group-item-success">
+										熟悉Oracle、MySQL关系型数据库，redis非关系型数据库
+									</li>
+									
+									<li class="list-group-item list-group-item-success">
+										深刻理解JavaWEB技术体系架构，熟练掌握Servlet/JSP，JDBC，JavaScript，jQuery等技术
+									</li>
+									
+									<li class="list-group-item list-group-item-success">
+										了解分布式开发。Dubbo分布式框架和zookeeper集成，使用solar检索引擎，使用sonarqb管理项目代码质量
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	  <!--<footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 Yanji Ma &middot; </p>
+      </footer>-->
+	</body>
+</html>
